@@ -1,0 +1,61 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+* {
+  min-height: 100px;
+}
+
+.feature {
+  float: left;
+  width: 30%;
+  margin: 1.66%;
+}
+
+/*.bl-feature {
+  float: left;
+  width: 30%;
+  margin: 1.66%;
+}
+
+.content-column {
+  float: right;
+  width: 30%;
+}*/
+
+header {
+  float: right;
+}
+
+.bottom-right {
+  float: right;
+  width: 50%;
+}
+
+.bottom-left {
+  float: left;
+  width: 40%;
+}
+
+img {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .feature {
+    float: none;
+    width: 95%;
+    clear: both;
+    overflow: auto;
+  }
+
+  .feature img {
+    float:left;
+    width: 30%;
+  }
+}

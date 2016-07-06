@@ -125,7 +125,7 @@ h1, h2 {
   .two-column-group {
     display: flex;
     justify-content: space-around;
-    flex-grow: 1;
+    width: 95%;
   }
 
   section#project-content {
@@ -136,10 +136,11 @@ h1, h2 {
     justify-content: space-around;
 }
 
-  section#blog-content {
-    flex-grow: 1;
-  }
+section#project-content:first-child {
+  flex-shrink: 1;
+}
 
-  section#twitter-content {
+  section#blog-content, section#twitter-content {
     flex-grow: 1;
+    width: 45%;
   }
