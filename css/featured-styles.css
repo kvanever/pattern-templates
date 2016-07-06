@@ -1,0 +1,25 @@
+img {
+  width: 95%;
+  margin-bottom: 1em;
+  }
+
+.featured-items {
+  margin: auto;
+  width: 95%;
+  clear: both;
+}
+
+ .feature {
+   float: left;
+   width: 20%;
+ }
+
+.secondary-items {
+  float: left;
+  width: 50%;
+}
+
+.tertiary-items {
+  float: right;
+  width: 49%;
+}

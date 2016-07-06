@@ -1,0 +1,76 @@
+/* For testing only */
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+* {
+  min-height: 100px;
+}
+
+/* End for testing */
+
+/*.wrapper {
+  margin: auto;
+  width: 93.75%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.top-content-main {
+  flex-grow: 1;
+  max-width: 65%;
+}
+
+.top-content-right {
+  flex-grow: 1;
+  min-width: 30%;
+  flex-direction: column;
+}
+
+.top-content-right-small {
+  flex-grow: 1;
+}*/
+
+.top-content {
+  height: 40%;
+  overflow: hidden;
+}
+
+.top-content-main {
+  float: left;
+  width: 60%;
+  padding-bottom: 9999999999px;
+  margin-bottom: -9999999999px;
+
+}
+
+.top-content-right {
+  float: right;
+  width: 39%;
+}
+
+.top-content-right-small {
+  float: right;
+}
+
+
+.bottom-content-left-small {
+  float: left;
+  width: 50%;
+}
+
+.bottom-left {
+  width: 50%;
+  float: left;
+}
+
+.bottom-content-right {
+  width: 40%;
+  float: right;
+}

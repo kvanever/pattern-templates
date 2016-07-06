@@ -1,0 +1,145 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+* {
+  min-height: 100px;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+header {
+  display: flex;
+}
+
+nav, .logo {
+  flex-grow: 1;
+  display: flex;
+}
+
+.nav-item {
+  flex-grow: 1;
+}
+
+section#main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.main.article {
+  max-width: 50%;
+}
+
+.main.image {
+  text-align: right;
+}
+
+section#bottom-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+section#blog-content, section#twitter-content {
+  max-width: 50%;
+}
+
+.two-column-group {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  width: 60%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.media-object {
+  display: flex;
+}
+
+@media screen and (max-width: 1600px) {
+  section#bottom-content {
+    flex-direction: column;
+  }
+
+  .two-column-group {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+  }
+
+  section#project-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+  section#blog-content {
+    flex-grow: 1;
+  }
+
+  section#twitter-content {
+    flex-grow: 1;
+  }
